@@ -1,0 +1,95 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-08-23T12:22:02.056Z",
+        "line": 4,
+        "name": "calculate two number",
+        "description": "",
+        "id": "calculate-two-number;calculate-two-number",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2326000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have entered 3 into the calculator",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 15
+                }
+              ],
+              "location": "calculator.StepDefinitions.i_have_entered_into_the_calculator(java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 136000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have entered 1 into the calculator",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 15
+                }
+              ],
+              "location": "calculator.StepDefinitions.i_have_entered_into_the_calculator(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1083000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I press multiply",
+            "match": {
+              "location": "calculator.StepDefinitions.i_press_multiply()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 776000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the result should be 3 on the screen",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 21
+                }
+              ],
+              "location": "calculator.StepDefinitions.the_result_should_be_on_the_screen(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TEST_BZ_322"
+          }
+        ]
+      }
+    ],
+    "name": "calculate two number",
+    "description": "",
+    "id": "calculate-two-number",
+    "keyword": "Feature",
+    "uri": "file:features/multiplication.feature",
+    "tags": []
+  }
+]
